@@ -1,0 +1,43 @@
+:root{
+    font-size: 62.5%;
+}
+
+html,body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    width: 100%;
+    font-size: 1.6rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body > *:not(script) {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: none;
+    margin: none;
+    border: 1px solid black;
+}
+
+.section {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 96px 0px 144px;
+    border: 1px solid red;
+}
+
+.row {
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 1080px;
+    border: 1px dashed blue;
+}
+

@@ -1,0 +1,55 @@
+$header-height: 80px;
+header { 
+    min-height: $header-height;
+
+    .row{
+        min-height: 80px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .section{
+        padding: 0px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+    }
+    #menu-items {
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            li {
+                padding: 16px;
+            }
+            li:last-of-type {
+                padding-right: 0px;
+            }
+        }
+    }
+
+
+    div.dropdown {
+        ul {
+            flex-direction: column;
+            li {
+                padding: 16px!important;
+                box-sizing: border-box;
+                border: 1px dashed gray;
+            }
+            padding: 0px;
+
+        }
+        display: none;
+        position: fixed;
+        right: 5%;
+        top: calc($header-height / 2);
+        z-index: 1;
+        background-color: white;
+    }
+    .dropdown-trigger:hover div.dropdown, div.dropdown:hover, .dropdown-trigger:focus div.dropdown, div.dropdown:focus {
+        display: block;
+        transition: 1s all;
+    }
+}
